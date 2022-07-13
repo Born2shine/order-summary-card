@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img:not(.music-icon){
+    width: 100%;
+}
+/* .music-icon{
+    width: initial;
+} */
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: hsl(225, 100%, 94%);
+}
+.bg-pattern{
+    display: none;
+}
+
+.main-wrapper{
+    padding: 50px 20px;
+    /* padding: 20px 10px 5px 40px; */
+}
+.main-wrapper .card-container{
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, .2);
+}
+
+.main-wrapper .card-container .hero .hero-img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.main-wrapper .card-container .content{
+    padding: 20px;
+    text-align: center;
+}
+.main-wrapper .card-container .content .title{
+    color: hsl(223, 47%, 23%);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.main-wrapper .card-container .content .discription{
+    font-weight: 500;
+    font-size: 17px;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.main-wrapper .card-container .content .plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 15px;
+}
+.main-wrapper .card-container .content .plan .btn-link{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.main-wrapper .card-container .content .plan .plan-info .price{
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.main-wrapper .card-container .content .btn{
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: -1px 13px 17px 0px rgba(0, 0, 0, .2);
+}
+.main-wrapper .card-container .content .cancel-order{
+    display: block;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .main-wrapper{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .bg-pattern{
+        display: block;
+        position: absolute;
+        z-index: -1;
+        height: 50%;
+    }
+}
